@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>YouTube без DPI</title>
+  <style>
+    #youtube-frame {
+      width: 100%;
+      height: 100vh;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <iframe id="youtube-frame" src="https://www.youtube.com/"></iframe>
+  <script>
+    // Отключить DPI покеты
+    document.querySelector('meta[name="viewport"]').setAttribute('content', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no');
+  </script>
+</body>
+</html>
